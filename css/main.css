@@ -1,0 +1,425 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap");
+nav {
+  background-color: #F3F936; }
+
+
+  
+body {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  padding: 0;
+  margin: 0; }
+
+/*  Inicio Nav */
+nav {
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  box-shadow: 10px 10px 27px 0px rgba(0, 0, 0, 0.55); }
+
+nav li {
+  list-style: none;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  padding: 0.3rem 1rem; }
+
+nav a {
+  color: #686868;
+  text-decoration: none;
+  padding: 1rem 3rem;
+  font-weight: 700;
+  font-style: normal; }
+
+nav a:hover {
+  background: black;
+  color: white;
+  transition: ease 0.5s; }
+
+@media (max-width: 1130px) {
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 0 25%;
+    border-radius: 0 0 40px 40px; }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0; }
+  nav li, nav li a {
+    padding: 0;
+    margin: 0; } }
+
+/*  Fin Nav */
+/*  Inicio Inicios */
+#inicios {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to bottom, #31b1ed 0%, #2998cc 100%);
+  color: white;
+  border-bottom: 5px solid white; }
+
+#inicios h2 {
+  font-size: 2.5rem;
+  color: #F3F936;
+  text-decoration: underline; }
+
+#inicios p {
+  padding: 0 3rem;
+  font-size: 1.3rem;
+  line-height: 2.5rem; }
+
+#inicios p a {
+  text-decoration: none;
+  color: #F3F936;
+  font-weight: 700; }
+
+@media (max-width: 950px) {
+  #inicios h2 {
+    margin-top: 10rem;
+    font-size: 2rem; }
+  #inicios p {
+    font-size: 1rem;
+    line-height: 2rem; } }
+
+/*  Fin Inicios */
+/* Inicio Donde */
+#donde {
+  height: 100vh;
+  background: linear-gradient(to bottom, #ed4e4e 0%, #7a1515 100%);
+  width: 100%;
+  color: white;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 5px solid white; }
+
+#donde h2 {
+  font-size: 2.5rem;
+  color: #F3F936;
+  text-decoration: underline; }
+
+#donde p {
+  padding: 1rem 3rem;
+  font-size: 1.3rem;
+  line-height: 2.5rem; }
+
+#donde div {
+  width: 40vw;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  padding: 2vw;
+  border-radius: 20px;
+  box-shadow: 10px 10px 27px 0px rgba(0, 0, 0, 0.55); }
+
+#donde video {
+  width: 100%; }
+
+/* Fin Donde */
+/* Inicio Precios */
+#precios {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(to bottom, #31ed9a 0%, #2cb879 100%);
+  height: 100vh;
+  width: 100%;
+  color: white;
+  border-bottom: 5px solid white; }
+
+#precios h2 {
+  font-size: 2.5rem;
+  color: #F3F936;
+  text-decoration: underline; }
+
+#precios p {
+  padding: 0rem 3rem;
+  font-size: 1.3rem;
+  font-style: italic; }
+
+#precios table {
+  background: #31B1ED;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 5px solid white;
+  box-shadow: 10px 10px 27px 0px rgba(0, 0, 0, 0.55);
+  margin-top: 4rem; }
+
+#precios table .planes {
+  background: #F3F936;
+  margin: 1rem;
+  color: #31B1ED; }
+
+#precios table th:hover {
+  background: white;
+  transition: ease 0.5s;
+  cursor: pointer;
+  transform: scale(1.2, 1.2); }
+
+#precios table th {
+  padding: 1rem;
+  border-radius: 10px;
+  margin: 0 10rem;
+  font-size: 1.5rem; }
+
+#precios td {
+  font-size: 1.2rem;
+  padding: 1.5rem;
+  margin: 0; }
+
+#precios table td:hover {
+  background: #F3F936;
+  color: black;
+  transition: ease 0.5s; }
+
+/* Fin Precios */
+/* Inicio Contacto */
+#contacto {
+  width: 100%;
+  background: linear-gradient(to bottom, #914aff 0%, #6a39b8 100%);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5rem 0;
+  border-bottom: 5px solid white; }
+
+#form {
+  box-shadow: 10px 10px 27px 0px rgba(0, 0, 0, 0.55); }
+
+#contacto h2 {
+  font-size: 2.5rem;
+  color: #F3F936;
+  text-decoration: underline; }
+
+legend {
+  background: #F3F936;
+  padding: 1rem 2rem;
+  color: black;
+  font-weight: 700;
+  font-size: 1.3rem;
+  border-radius: 10px; }
+
+#nombre, #mail {
+  width: 50%;
+  display: block;
+  margin: 0 auto; }
+
+#contacto fieldset {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 50vw;
+  background: #31B1ED;
+  border: none;
+  border-radius: 2%;
+  padding: 2rem; }
+
+input, button, select {
+  width: 100%;
+  padding: 0.5rem 0;
+  margin: 0.5rem 0;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem; }
+
+input:hover, button:hover, select:hover {
+  background: black;
+  color: white;
+  transition: ease 0.5s; }
+
+input {
+  padding: 0.8rem 0; }
+
+.titulo {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #F3F936;
+  padding-top: 2rem; }
+
+button {
+  background: #F3F936;
+  width: 20vw;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin: 1rem auto; }
+
+/* Fin Contacto */
+/* Inicio Fotos */
+#fotos {
+  border-bottom: 5px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  text-align: center; }
+
+#fotos h2 {
+  font-size: 2.5rem;
+  color: #F3F936;
+  text-decoration: underline; }
+
+#fotos p {
+  padding: 0rem 3rem;
+  font-size: 1.3rem;
+  color: white; }
+
+/* Inicio Galeria */
+/* Fin Galeria */
+#grid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  height: 100vh;
+  grid-column-gap: 0.5rem;
+  grid-template-areas: "c  a  d  f"
+ "c  a  e  g"
+ "b  a  e  h";
+  grid-row-gap: 0.5rem;
+  width: 80%;
+  margin: 0 auto;
+  padding: 5rem 0; }
+
+#a {
+  background-color: aqua;
+  background: url(../img/Amarillo1.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  grid-area: a; }
+
+#b {
+  background-color: black;
+  background: url(../img/Amarillo2.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  grid-area: b; }
+
+#c {
+  background-color: coral;
+  background: url(../img/Amarillo3.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  grid-area: c; }
+
+#d {
+  background-color: crimson;
+  background: url(../img/bosqueHumo.jpg) no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  grid-area: d; }
+
+#e {
+  background-color: crimson;
+  background: url(../img/Botella1.jpg) no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  grid-area: e; }
+
+#f {
+  background-color: crimson;
+  background: url(../img/Botella2.jpg) no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  grid-area: f; }
+
+#g {
+  background-color: crimson;
+  background: url(../img/Campera.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  grid-area: g; }
+
+#h {
+  background-color: crimson;
+  background: url(../img/Montañas.jpg) no-repeat;
+  background-size: cover;
+  background-position: center top;
+  grid-area: h; }
+
+.objeto:hover {
+  transform: scale(1.1, 1.1); }
+
+@media (max-width: 1400px) {
+  #grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    height: 120vh;
+    grid-column-gap: 0.5rem;
+    grid-template-areas: "c  a  d "
+ "c  a  e "
+ "b  g  e "
+ "f  g  h ";
+    grid-row-gap: 0.5rem;
+    width: 80%;
+    margin: 0 auto;
+    padding: 5rem 0; } }
+
+@media (max-width: 1100px) {
+  #grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(8, 1fr);
+    height: 120vh;
+    grid-column-gap: 0.5rem;
+    grid-template-areas: " a  b  "
+ " a  b  "
+ " c  d "
+ " c  d  "
+ " e  f  "
+ " e  f  "
+ " g  h  "
+ " g  h  ";
+    grid-row-gap: 0.5rem;
+    width: 80%;
+    margin: 0 auto;
+    padding: 5rem 0; }
+  #e, #f {
+    background-position: center; } }
+
+@media (max-width: 700px) {
+  #grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 1fr);
+    height: 220vh;
+    grid-column-gap: 0.5rem;
+    grid-template-areas: "a"
+ "b"
+ "c"
+ "d"
+ "e"
+ "f"
+ "g"
+ "h ";
+    grid-row-gap: 0.5rem;
+    width: 80%;
+    margin: 0 auto;
+    padding: 5rem 0; } }
+
+/* Fin Fotos */
